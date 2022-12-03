@@ -25,10 +25,10 @@ body {
 .col-1 {
   width: 60%;
   padding-left: 9rem;
-  padding-top: 4rem;
+  padding-top: 4.1rem;
 }
 .title {
-  margin-top: 6rem;
+  margin-top: 6.5rem;
 }
 .title h1 {
   font-size: 4rem;
@@ -49,7 +49,7 @@ body {
   color: var(--Desaturated-Red);
   padding-right: 17rem;
   line-height: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 .email {
   margin-top: 3rem;
@@ -78,7 +78,6 @@ input[type="email"]::placeholder {
 }
 .error-icon {
   position: absolute;
-  display: none;
   right: 6rem;
   top: 1rem;
 }
@@ -86,10 +85,11 @@ button.email-send-btn {
   position: absolute;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.7rem;
   border-radius: 2rem;
   right: -16px;
   top: 0;
+  outline: none;
 }
 button.email-send-btn:hover {
   position: absolute;
@@ -102,9 +102,11 @@ button.email-send-btn:hover {
 }
 p.email-error {
   color: var(--Soft-Red);
-  display: none;
   margin-left: 2rem;
   margin-top: 0.7rem;
+}
+.d-none {
+  display: none;
 }
 .col-2 {
   width: 40%;

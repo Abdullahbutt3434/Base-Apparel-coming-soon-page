@@ -42,12 +42,12 @@
       <div class="email-input">
         <div class="email">
           <label for="">
-            <input type="email" placeholder="Email Address">
-            <div class="error-icon"><img src="./images/icon-error.svg" alt=""></div>
-            <button class="email-send-btn"><img src="./images/icon-arrow.svg" alt=""></button>
+            <input type="email" id="email" placeholder="Email Address">
+            <div class="error-icon d-none" id="error-icons"><img src="./images/icon-error.svg" alt=""></div>
+            <button class="email-send-btn" id="submit"><img src="./images/icon-arrow.svg" alt=""></button>
           </label>
         </div>
-        <p class="email-error">Please enter valid email </p>
+        <p class="email-error d-none" id="error-emails">Please enter valid email </p>
       </div>
     </div>
     <div class="col-2">
@@ -67,6 +67,7 @@
       Coded by <a href="#">Abdullah</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
