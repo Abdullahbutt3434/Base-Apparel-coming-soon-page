@@ -1,0 +1,124 @@
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: round;
+}
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+.col-1 {
+  width: 60%;
+  padding-left: 9rem;
+  padding-top: 3rem;
+}
+.title {
+  margin-top: 6rem;
+}
+.title h1 {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+.title h1 span {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  color: black;
+  font-weight: 800;
+}
+.description {
+  color: var(--Desaturated-Red);
+  padding-right: 17rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.email {
+  margin-top: 3rem;
+  padding-right: 18rem;
+  display: flex;
+  align-items: center;
+}
+label {
+  position: relative;
+  width: 100%;
+}
+input[type="email"] {
+  width: 100%;
+  height: 3.5rem;
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 4rem;
+  padding-left: 1.8rem;
+}
+input[type="email"]:focus-visible {
+  border: 1px solid var(--Soft-Red);
+  outline: none;
+}
+input[type="email"]::placeholder {
+  color: var(--Desaturated-Red);
+}
+.error-icon {
+  position: absolute;
+  display: none;
+  right: 6rem;
+  top: 1rem;
+}
+button.email-send-btn {
+  position: absolute;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  right: -16px;
+}
+button.email-send-btn:hover {
+  position: absolute;
+  background: hsl(0, 80%, 86%);
+  padding: 1.1rem 2.7rem;
+  cursor: pointer;
+  box-shadow: -8px 33px 75px 4px hsl(0, 80%, 86%);
+  -webkit-box-shadow: -8px 33px 75px 4px hsl(0, 80%, 86%);
+  -moz-box-shadow: -8px 33px 75px 4px hsl(0, 80%, 86%);
+}
+p.email-error {
+  color: var(--Soft-Red);
+  display: none;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+.col-2 {
+  width: 40%;
+  background-image: url("./images/hero-desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.attribution {
+  position: absolute;
+  /* top: 100%; */
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
