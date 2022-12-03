@@ -25,7 +25,7 @@ body {
 .col-1 {
   width: 60%;
   padding-left: 9rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .title {
   margin-top: 6rem;
@@ -89,6 +89,7 @@ button.email-send-btn {
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   right: -16px;
+  top: 0;
 }
 button.email-send-btn:hover {
   position: absolute;
